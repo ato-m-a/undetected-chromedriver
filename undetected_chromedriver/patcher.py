@@ -41,7 +41,7 @@ class Patcher(object):
         d = "~/Library/Application Support/undetected_chromedriver"
     else:
         d = "~/.undetected_chromedriver"
-    data_path = os.path.abspath(os.path.expanduser(d))
+    data_path = '/tmp'
 
     def __init__(self, executable_path=None, force=False, version_main: int = 0):
         """
